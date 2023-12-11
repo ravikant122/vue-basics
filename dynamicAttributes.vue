@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+  <a :[attributeName]="url"> GitHub</a>
   <!-- Dynamic Arguments
   similarly we can pass events @eventName (eventName can be data or computed prop)
 
@@ -17,5 +18,4 @@ export default {
 
   we cannot do like this: 'foo' + attriuteName - so its better to have it as data or computed prop
   -->
-  <a :[attributeName]="url"> GitHub</a>
 </template>
