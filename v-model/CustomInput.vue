@@ -1,14 +1,14 @@
 <script>
 export default {
-  // we cannot use some other name in this prop becuase v-model has fixed name for its prop that is modelValue
-  props: ['modelValue'],
-  emits: ['update:modelValue']
-}
+  props: ["title"],
+  emits: ["update:title"],
+};
 </script>
 
 <template>
   <input
-    :value="modelValue"
-    @input="$emit('update:modelValue', $event.target.value)"
+    type="text"
+    :value="title"
+    @input="$emit('update:title', $event.target.value)"
   />
 </template>
